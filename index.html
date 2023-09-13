@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating an alert</title>
+</head>
+<body>
+    <div class="container">
+        <button class="indocument">
+            click one
+        </button>
+        <button class="aot">
+            click 2
+        </button>
+    </div>
+    <script>
+        let indocument = document.getElementsByClassName('indocument');
+        for (let i =0; i < indocument.length; i++){
+            indocument[i].addEventListener('click', function(){
+                alert('this is the indocument alert');
+                console.log('it worked');
+            })
+        }
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
